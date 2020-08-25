@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<Style>
+  body{
+    background-color: #f5eee1;
+    color: white;
+    font-size: 25px;
+    text-decoration: bold;
+    font-family: serif;
+    color:black;
+  }
+button{
+  border-radius: 8px;
+  width: 5%;
+  height: 5%;
+}
+
+</Style>
+</head>
+<body>
+
+<script src="read.js"></script>
+<h2 style="text-align:center ">"Face Mask and Temperature Detection"</h2>
+<br>
+<br>
+<!--<form class="example" style="margin:auto;max-width:300px">
+  <input type="text" id = "Username" placeholder="Enter ID" name="search2">
+  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <button type="button" onclick="getdata();"><i class="fa fa-search"></i></button>
+</form>
+-->
+<center>
+    <input type="text" id="User" required="required" style ="width: 20%; height: 20px; border-radius: 8px;"><br>
+    <br>
+    <button type="button" onclick="getdata();">Get</button>
+</center>
+<br>
+<center>
+    <p>Name: <strong id="name"></strong></p>
+    <p>Time: <strong id="Time"></strong></p>
+    <p>Record: <strong id="Record"></strong></p>
+    <p>Photo: <strong id="Photo"></strong></p>
+    <p>Date: <strong id="Date"></strong></p>
+</center>
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC86NJpNvB18WC4MubSdHyebstpdblr44E",
+    authDomain: "scaai-d72af.firebaseapp.com",
+    databaseURL: "https://scaai-d72af.firebaseio.com",
+    projectId: "scaai-d72af",
+    storageBucket: "scaai-d72af.appspot.com",
+    messagingSenderId: "920631907391",
+    appId: "1:920631907391:web:3f5aad591e3bb1214e948a",
+    measurementId: "G-NDM2W5PTQT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html> 
